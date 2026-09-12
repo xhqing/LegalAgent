@@ -1,0 +1,32 @@
+# 运行时数据目录：Agent 的产物（复盘、日志等本地业务数据，非开源内容）
+docs/
+
+# node_modules 全局兜底
+node_modules/
+
+# 系统杂物
+.DS_Store
+
+# Claude Code 个人本地配置（机器本地，不提交）
+.claude/settings.local.json
+
+# 临时产物（见全局 ~/.claude/CLAUDE.md「临时产物放 tmp/」规则）
+tmp/
+
+# 产物接力目录（含可售卖成品，勿公开）
+artifacts/
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 本机密钥通用兜底（保留 .env.example）
+.env
+.env.*
+!.env.example
+
+# 个人隐私类待办与变更记录 local 版（不入库）
+TODO.local.md
+TODO-archive.local.md
+CHANGELOG.local.md
+CHANGELOG-archive.local.md
