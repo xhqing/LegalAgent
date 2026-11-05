@@ -10,7 +10,7 @@ node_modules/
 # Claude Code 个人本地配置（机器本地，不提交）
 .claude/settings.local.json
 
-# 临时产物（见全局 ~/.claude/CLAUDE.md「临时产物放 tmp/」规则）
+# 临时产物（见全局 ~/.pi/agent/AGENTS.md「临时产物放 tmp/」规则）
 tmp/
 
 # 产物接力目录（含可售卖成品，勿公开）
