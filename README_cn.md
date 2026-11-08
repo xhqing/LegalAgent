@@ -46,6 +46,6 @@ Justin 独立于销售流水线（Scout → Wright → Buzz → Vendy → Echo�
 
 ## 许可与署名
 
-版权所有 (c) 2026 All Contributors，基于 [MIT License](LICENSE.md) 授权。
+版权所有 (c) 2026 xhqing，基于 [MIT License](LICENSE.md) 授权。
 
 **署名要求**：如你基于本项目衍生或再分发，请保留版权声明与许可文件，并注明来源：[LegalAgent](https://github.com/xhqing/LegalAgent)。
