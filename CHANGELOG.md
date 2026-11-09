@@ -1,5 +1,10 @@
 # CHANGELOG
 
+### 变更（Kit 项目更名为 assistant-agent，2026-11-09）
+
+- **为什么改**：Kit 的 Agent 项目 2026-11-09 由 `ExecutiveAssistantAgent` 更名为 `assistant-agent`——项目名只求「尽可能简单、能体现主要职责」，不再要求以 `Agent` 结尾；项目性质改由 `README.md` 的 `Type-AI Agent` 徽章判定，与名字无关。本仓库 `TODO.md` 里指向该项目私有 `docs/` 的路径用的是旧目录名，私有目录已同步改名，不改就断链。
+- **改了什么**：`TODO.md` 中四处指代与路径（`ExecutiveAssistantAgent/docs/…` → `assistant-agent/docs/…`、`ExecutiveAssistantAgent 移交` → `assistant 移交`）同步改名。
+
 本文件记录本项目（LegalAgent / Justin）每次文件增删改查的变更，写清「为什么改」和「改了什么」。版本号以项目根 `VERSION` 文件为唯一权威（当前 0.1.0）。
 
 ### 新增（CI 门禁：validate 检查 + main 分支 strict 保护）
