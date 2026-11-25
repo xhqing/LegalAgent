@@ -31,4 +31,4 @@
 
 ## 子项目清单
 
-暂无子项目。（子项目归属与 Leader / Worker 分工见全局 `~/.pi/agent/AGENTS.md`「Leader / Worker 分工」与 `~/.pi/agent/docs/agents-registry.md` 第 4 条：Agent 项目根目录的会话是 Leader，子项目根 / worktree 的会话是 Worker；子项目须带 `AGENTS.md` 软链接 + 真实 `.pi/` 目录 + `.pi/APPEND_SYSTEM.md`。）
+暂无子项目。（会话角色与子项目归属见全局 `~/.pi/agent/AGENTS.md`「Leader / Worker 的定义」与 `~/.pi/agent/docs/agents-registry.md` 第 5 条：本项目主工作区的 main 分支会话是 **agentLeader**，负责本项目及名下全部子项目；子项目主工作区的 main 分支会话是 **subLeader**，只管子项目自身；本项目与子项目的非 main 分支 worktree 会话都是 **Worker**，只干当前 worktree 里的活，不碰 local main、不建删 worktree、不合并 PR、不发版。子项目用本仓库实体 `AGENTS.md` + `.pi/APPEND_SYSTEM.md`，不挂软链接、不写跨仓库 `settings.json` 路径。）

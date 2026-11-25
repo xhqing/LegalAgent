@@ -1,5 +1,11 @@
 # CHANGELOG
 
+### 变更（会话角色口径更新为 2026-11-25 三级定义，2026-11-25）
+
+- **为什么改**：用户 2026-11-25 重新定义全团队会话角色为三级——agentLeader（Agent 项目主工作区 main）/ subLeader（子项目主工作区 main，只管自身项目）/ Worker（任何项目的非 main 分支 worktree）；旧的 2026-11-07 口径（「Agent 项目根目录是 Leader、子项目根 / worktree 是 Worker」，并要子项目挂 `AGENTS.md` 软链接）已废止（软链接做法 2026-11-08 就取消了）。本仓库 `AGENTS.md` 仍写着旧口径，会让本会话与将来参与本项目的人按错的角色边界做事。
+- **改了什么**：`AGENTS.md`「子项目清单」节末尾说明改为当前口径——本项目主工作区的 main 分支是 agentLeader，子项目主工作区 main 是 subLeader、其 worktree 是 Worker，并写明 Worker 的边界（只干当前 worktree、不碰 local main、不建删 worktree、不合并 PR、不发版）；引用指针从全局 `AGENTS.md`「Leader / Worker 分工」与注册表第 4 条改为「Leader / Worker 的定义」与第 5 条；子项目载体改为实体 `AGENTS.md` + `.pi/APPEND_SYSTEM.md`，不挂软链接。
+- **同步检查**：全仓 grep `Leader|Worker`，旧口径仅此一处，已全部改完；`README.md` / `README_cn.md` / `.pi/` / 脚本均无角色定义。
+
 ### 变更（Kit 项目更名为 assistant-agent，2026-11-09）
 
 - **为什么改**：Kit 的 Agent 项目 2026-11-09 由 `ExecutiveAssistantAgent` 更名为 `assistant-agent`——项目名只求「尽可能简单、能体现主要职责」，不再要求以 `Agent` 结尾；项目性质改由 `README.md` 的 `Type-AI Agent` 徽章判定，与名字无关。本仓库 `TODO.md` 里指向该项目私有 `docs/` 的路径用的是旧目录名，私有目录已同步改名，不改就断链。
